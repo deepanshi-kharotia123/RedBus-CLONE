@@ -1,0 +1,43 @@
+
+
+   .photo-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .photo-list h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .photo-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .photo-image {
+    max-width: 150px;
+    max-height: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .photo-details {
+    flex: 1;
+  }
+  
+  .photo-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  

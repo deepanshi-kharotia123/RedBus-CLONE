@@ -1,0 +1,23 @@
+
+   .forum-topic {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .posts {
+    margin-top: 20px;
+  }
+  
+  .post-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-card p {
+    margin: 10px 0;
+  }
+  

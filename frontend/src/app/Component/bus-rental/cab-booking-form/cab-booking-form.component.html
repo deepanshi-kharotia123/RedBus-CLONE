@@ -1,0 +1,67 @@
+  <form>
+    <div class="form-group name-age">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="name" />
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" [(ngModel)]="age" />
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" />
+    </div>
+  
+    <div class="form-group address">
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" [(ngModel)]="address"></textarea>
+    </div>
+  
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" [(ngModel)]="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+     <!-- <a class="payment" routerLink="/payment">
+        <i class="icon-payment"></i>Pay Now</a> -->
+      <button  class="payment" type="submit" (click)="ProceedToPay()">Pay Now</button>
+  </form>
+  
+   <!-- <form>
+    <div class="form-group name-age">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="name" />
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" [(ngModel)]="age" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" />
+    </div>
+    <div class="form-group address">
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" [(ngModel)]="address"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" [(ngModel)]="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <button class="payment" type="submit" (click)="handleProceedToPay()">
+      Pay Now
+    </button>
+  </form> -->
+  

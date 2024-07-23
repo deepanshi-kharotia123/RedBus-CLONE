@@ -1,0 +1,36 @@
+<div class="container">
+  <form class="neumorphic-form">
+    <h2>Add a New Tip</h2>
+    <div class="input-container">
+      <form (ngSubmit)="createTip()">
+        <label class="heading" for="title">Title</label>
+        <input
+          type="text"
+          id="title"
+          [(ngModel)]="tip.title"
+          name="title"
+          required
+        />
+
+        <label class="heading" for="content">Content</label>
+        <textarea
+          id="content"
+          [(ngModel)]="tip.content"
+          name="content"
+          required
+        ></textarea>
+
+        <label class="heading" for="author">Author</label>
+        <input
+          type="text"
+          id="author"
+          [(ngModel)]="tip.author"
+          name="author"
+          required
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </form>
+</div>

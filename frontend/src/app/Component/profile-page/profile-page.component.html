@@ -1,0 +1,293 @@
+<!-- <div class="ProfilePannel">
+    <div class="leftPart">
+      <ul class="leftPannel">
+        <li class="leftPannel_eachListItem">
+          <mat-icon style="color: grey; font-size: 30px; height: 100% ;width:100%;">perm_identity</mat-icon>
+          <div class="leftPannel_eachListItem_text">
+            {{ 'Dashboard' }}
+          </div>
+        </li>
+        <div class="line"></div>
+        
+        <li class="leftPannel_eachListOption" (click)="handlelistitemclick('trips')">
+          <i class="material-icons" style="color: grey; font-size: 30px;">location_on</i>
+  
+          <div class="leftPannel_eachListItem_text">My Trips</div>
+        </li>
+        <div class="line"></div>
+        
+        <li class="leftPannel_eachListOption" (click)="handlelistitemclick('profile')">
+          <i class="material-icons" style="color: grey; font-size: 30px;">settings</i>
+          <div class="leftPannel_eachListItem_text">My Profile</div>
+        </li>
+        
+        <div class="line"></div>
+        <li class="leftPannel_eachListOption" (click)="handlelistitemclick('Stories')">
+          <i class="material-icons" style="color: grey; font-size: 30px;">donut_large</i>
+  
+          <div class="leftPannel_eachListItem_text">My Stories</div>
+        </li>
+        <div class="line"></div>
+        <li class="leftPannel_eachListOption" (click)="handlelistitemclick('wallet')">
+          <i class="material-icons" style="color: grey; font-size: 30px;">account_balance_wallet</i>
+  
+          <div class="leftPannel_eachListItem_text">My Wallet</div>
+        </li>
+        <div class="line"></div>
+      </ul>
+    </div>
+    <div class="seprator"></div>
+  
+
+    <a class="flex flex-col items-center text-center gap-1 px-2 py-3 rounded-lg group hover:bg-gray-100">
+      <div class="group-hover:fill-main-color">
+        <svg width="35" height="20" viewBox="0 0 35 20" fill="none">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7.05-3.85-7.53-7.93H5v-2H3.47C4.05 7.05 7.05 3.95 11 3.47V5h2V3.47c3.95.49 7.05 3.85 7.53 7.93H19v2h1.53c-.48 4.08-3.58 7.44-7.53 7.93V19h-2v1.93z" />
+        </svg></div>
+      <a routerLink="/travel-stories">
+        <i class="icon-travel-stories"></i>Stories</a>
+    </a>
+
+
+    <div *ngIf="selecteditem === 'trips'">
+      MyTrips component or content
+       <app-my-trip ></app-my-trip> 
+         [booking]= "'mytrip'"
+    </div>
+    <div *ngIf="selecteditem === 'wallet'">
+      Wallet feature coming soon...
+    </div>
+    <div *ngIf="selecteditem === 'Stories'">
+      <app-travel-stories></app-travel-stories>
+    </div>
+    <div *ngIf="selecteditem === 'profile'" class="rightPannel">
+      <span class="profileHeading">My Profile</span>
+      <div class="profilebox">
+        <div style="display: flex; justify-content: space-between">
+          <div
+            style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+            <div class="userDetailHeading">Your name</div>
+            <script>
+              console.log(currentcustomer);
+            </script>
+            <div class="userDetailInfo">{{ currentcustomer ? currentcustomer.name : 'user' }}
+              <div>{{ currentcustomer | json }}</div>
+            </div>
+          </div>
+          <div
+            style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+            <div class="userDetailHeading">Date of Birth</div>
+            <div class="userDetailInfo">1993-03-04</div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 5%">
+          <div
+            style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+            <div class="userDetailHeading">Gender</div>
+            <div class="userDetailInfo">{{ currentcustomer ? currentcustomer.gender : '-' }}
+              <div>{{ currentcustomer | json }}</div>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 5%">
+          <div class="contactLine"></div>
+          <div class="contactDetailsHeading">Contact Details</div>
+          <div class="contactLine"></div>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 5%">
+          <div
+            style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+            <div class="userDetailHeading">email</div>
+            <div class="userDetailInfo">{{ currentcustomer ? currentcustomer.email : '-' }}
+              <div>{{ currentcustomer | json }}</div>
+            </div>
+          </div>
+          <div
+            style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+            <div class="userDetailHeading">phone</div>
+            <div class="userDetailInfo">{{ currentcustomer ? currentcustomer.phoneNumber : '' }}
+              <div>{{ currentcustomer | json }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+</div> -->
+
+<!-- <div class="ProfilePannel">
+  <div class="leftPart">
+    <ul class="leftPannel">
+      <li class="leftPannel_eachListItem">
+        <mat-icon style="color: grey; font-size: 30px; height: 100% ;width:100%;">perm_identity</mat-icon>
+
+        <div class="leftPannel_eachListItem_text">
+          {{ 'Dashboard' }}
+        </div>
+
+      </li>
+      <div class="line"></div>
+      
+      <li class="leftPannel_eachListOption" (click)="handlelistitemclick('trips')">
+        <i class="material-icons" style="color: grey; font-size: 30px;">location_on</i>
+
+        <div class="leftPannel_eachListItem_text">My Trips</div>
+      </li>
+      <div class="line"></div>
+      
+      <li class="leftPannel_eachListOption" (click)="handlelistitemclick('profile')">
+        <i class="material-icons" style="color: grey; font-size: 30px;">settings</i>
+        <div class="leftPannel_eachListItem_text">My Profile</div>
+      </li>
+      <div class="line"></div>
+      <li class="leftPannel_eachListOption" (click)="handlelistitemclick('wallet')">
+        <i class="material-icons" style="color: grey; font-size: 30px;">account_balance_wallet</i>
+
+        <div class="leftPannel_eachListItem_text">Wallet</div>
+      </li>
+      <div class="line"></div>
+    </ul>
+  </div>
+  <div class="seprator"></div>
+
+  <div *ngIf="selecteditem === 'trips'">
+   
+    <app-my-trip [booking]="mytrip"></app-my-trip> 
+  </div>
+  <div *ngIf="selecteditem === 'wallet'">
+    Wallet feature coming soon...
+  </div>
+  <div *ngIf="selecteditem === 'profile'" class="rightPannel">
+    <span class="profileHeading">{{ 'My Profile' }}</span>
+    <div class="profilebox">
+      <div style="display: flex; justify-content: space-between">
+        <div
+          style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+          <div class="userDetailHeading">Your name</div>
+          <div class="userDetailInfo">{{ currentcustomer ? currentname : 'User' }}</div>
+          <div>{{ currentcustomer | json }}</div>
+        </div>
+        <div
+          style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+          <div class="userDetailHeading">Date of Birth</div>
+          <div class="userDetailInfo">1993-03-04</div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-between; margin-top: 5%">
+        <div
+          style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+          <div class="userDetailHeading">Gender</div>
+          <div class="userDetailInfo">{{ currentcustomer ? currentcustomer.gender : '-' }}</div>
+          <div>{{ currentcustomer | json }}</div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: space-between; margin-top: 5%">
+        <div class="contactLine"></div>
+        <div class="contactDetailsHeading">Contact Details</div>
+        <div class="contactLine"></div>
+      </div>
+      <div style="display: flex; justify-content: space-between; margin-top: 5%">
+        <div
+          style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+          <div class="userDetailHeading">email</div>
+          <div class="userDetailInfo">{{ currentcustomer ? currentemail : '-' }}</div>
+          <div>{{ currentcustomer | json }}</div>
+        </div>
+        <div
+          style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+          <div class="userDetailHeading">phone</div>
+          <div class="userDetailInfo">12345678</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+
+<div class="ProfilePannel">
+  <div class="leftPart">
+      <ul class="leftPannel">
+          <li class="leftPannel_eachListItem">
+              <mat-icon style="color: grey; font-size: 30px; height: 100% ;width:100%;">perm_identity</mat-icon>
+              <div class="leftPannel_eachListItem_text">
+                  {{ 'Dashboard' }}
+              </div>
+          </li>
+          <div class="line"></div>
+          <li class="leftPannel_eachListOption" (click)="handlelistitemclick('trips')">
+              <i class="material-icons" style="color: grey; font-size: 30px;">location_on</i>
+              <div class="leftPannel_eachListItem_text">My Trips</div>
+          </li>
+          <div class="line"></div>
+          <li class="leftPannel_eachListOption" (click)="handlelistitemclick('profile')">
+              <i class="material-icons" style="color: grey; font-size: 30px;">settings</i>
+              <div class="leftPannel_eachListItem_text">My Profile</div>
+          </li>
+          <div class="line"></div>
+          <li class="leftPannel_eachListOption" (click)="handlelistitemclick('Stories')">
+              <i class="material-icons" style="color: grey; font-size: 30px;">donut_large</i>
+              <div class="leftPannel_eachListItem_text">My Stories</div>
+          </li>
+          <div class="line"></div>
+          <li class="leftPannel_eachListOption" (click)="handlelistitemclick('wallet')">
+              <i class="material-icons" style="color: grey; font-size: 30px;">account_balance_wallet</i>
+              <div class="leftPannel_eachListItem_text">My Wallet</div>
+          </li>
+          <div class="line"></div>
+      </ul>
+  </div>
+  <div class="seprator"></div>
+  <div *ngIf="selecteditem === 'trips'">
+      <app-my-trip [booking]="'mytrip'"></app-my-trip>
+  </div>
+  <div *ngIf="selecteditem === 'wallet'">
+      Wallet feature coming soon...
+  </div>
+  <div *ngIf="selecteditem === 'Stories'">
+      <app-travel-stories></app-travel-stories>
+  </div>
+  <div *ngIf="selecteditem === 'profile'" class="rightPannel">
+      <span class="profileHeading">My Profile</span>
+      <div class="profilebox">
+          <div style="display: flex; justify-content: space-between">
+              <div style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+                  <div class="userDetailHeading">Your name</div>
+                  <div class="userDetailInfo">{{ currentcustomer?.name || '' }}
+                    {{ currentname | json }}
+                  </div>
+              </div>
+              <div style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+                  <div class="userDetailHeading">Date of Birth</div>
+                  <div class="userDetailInfo">1993-03-04</div>
+              </div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: 5%">
+              <div style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+                  <div class="userDetailHeading">Gender</div>
+                  <div class="userDetailInfo">{{ currentcustomer?.gender || '-' }}
+                    {{ currentgender | json }}
+                  </div>
+              </div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: 5%">
+              <div class="contactLine"></div>
+              <div class="contactDetailsHeading">Contact Details</div>
+              <div class="contactLine"></div>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: 5%">
+              <div style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+                  <div class="userDetailHeading">Email</div>
+                  <div class="userDetailInfo">{{ currentcustomer?.email || '' }}
+                    {{ currentemail | json }}
+                  </div>
+              </div>
+              <div style="display: flex; flex-direction: column; margin-left: 20px; height: 50px; justify-content: space-evenly">
+                  <div class="userDetailHeading">Phone</div>
+                  <div class="userDetailInfo">{{ currentcustomer?.phoneNumber || '-' }}
+                    {{currentphoneNo | json }}
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

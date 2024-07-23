@@ -1,0 +1,15 @@
+
+
+   <div class="forum-topic">
+    <h1>{{ forum?.title }}</h1>
+    <p>{{ forum?.description }}</p>
+    <div class="posts">
+      <h2>Posts</h2>
+      <div *ngFor="let post of forum?.posts" class="post-card">
+        <p>{{ post.content }}</p>
+        <p><em>by {{ post.author }}</em></p>
+      </div>
+    </div>
+    <app-forum-post-form [forumId]="forumId" (postCreated)="onPostCreated($event)"></app-forum-post-form>
+  </div>
+  

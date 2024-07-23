@@ -1,0 +1,95 @@
+<div class="container">
+  <h1>Bus Rental Service</h1>
+  <form [formGroup]="busRentalForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="busSize">Bus Size & Price</label>
+      <select formControlName="busSize" id="busSize" class="form-control">
+        <option value="Cab">Cab (5-7 seats) [999/-]</option>
+        <option value="small">Small (15-20 seats) [1499/-]</option>
+        <option value="medium">Medium (30-40 seats) [2499/-]</option>
+        <option value="large">Large (50+ seats) [3999/-]</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Amenities</label>
+      <div formArrayName="amenities" class="checkbox-group">
+        <div *ngFor="let control of amenities.controls; let i = index">
+          <label>
+            <input type="checkbox" [formControlName]="i" />
+            {{ getAmenityName(i) }}
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="date">Select Date</label>
+      <input
+        matInput
+        [matDatepicker]="picker"
+        formControlName="date"
+        placeholder="     Date"
+      />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </div>
+    <div class="form-group">
+      <label for="route">Custom Route</label>
+      <textarea
+        formControlName="route"
+        id="route"
+        class="form-control"
+        rows="3"
+        placeholder="Enter your custom route details"
+      ></textarea>
+    </div>
+    <app-rental-form></app-rental-form>
+  </form>
+</div>
+<!-- <div class="container">
+  <h1>Bus Rental Service</h1>
+  <form [formGroup]="busRentalForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="busSize">Bus Size & Price</label>
+      <select formControlName="busSize" id="busSize" class="form-control">
+        <option value="Cab">Cab (5-7 seats) [999/-]</option>
+        <option value="small">Small (15-20 seats) [1499/-]</option>
+        <option value="medium">Medium (30-40 seats) [2499/-]</option>
+        <option value="large">Large (50+ seats) [3999/-]</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Amenities</label>
+      <div formArrayName="amenities" class="checkbox-group">
+        <div *ngFor="let control of amenities.controls; let i = index">
+          <label>
+            <input type="checkbox" [formControlName]="i" />
+            {{ getAmenityName(i) }}
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="date">Select Date</label>
+      <input
+        matInput
+        [matDatepicker]="picker"
+        formControlName="date"
+        placeholder="     Date"
+      />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </div>
+    <div class="form-group">
+      <label for="route">Custom Route</label>
+      <textarea
+        formControlName="route"
+        id="route"
+        class="form-control"
+        rows="3"
+        placeholder="Enter your custom route details"
+      ></textarea>
+    </div>
+    
+    <button type="submit" class="proceedButton">Proceed to Pay</button>
+  </form>
+</div> -->

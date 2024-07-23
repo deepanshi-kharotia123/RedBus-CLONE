@@ -1,0 +1,71 @@
+.payment-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  h2{
+    font-size: xx-large;
+  }
+  .payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .offer-code {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .offer-code input {
+    width: 80%;
+    padding:10px;
+    font-size: 16px;
+  }
+  
+  .payment-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .info-box {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .info-box i {
+    margin-right: 10px;
+  }
+  .btn-stripe {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-stripe:hover {
+    background-color: #c82333;
+  }
+  
+  .payment-methods {
+    margin-top: 20px;
+  }
+  
+  .payment-methods label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .payment-methods i {
+    margin-right: 10px;
+  }
+  

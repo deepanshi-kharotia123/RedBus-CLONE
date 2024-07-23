@@ -1,0 +1,15 @@
+
+  <div class="container">
+    <form class="neumorphic-form">
+      <h2>Add a New Post</h2>
+      <div class="input-container">
+        <form (ngSubmit)="addPost()">
+          <label  class="heading" for="content">Content</label>
+          <textarea id="content" [(ngModel)]="post.content" name="content" required></textarea>
+      
+          <label  class="heading" for="author">Author</label>
+          <input type="text" id="author" [(ngModel)]="post.author" name="author" required>
+      
+          <button type="submit">Submit</button>
+        </form>
+      </div>

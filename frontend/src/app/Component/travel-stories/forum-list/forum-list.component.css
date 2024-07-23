@@ -1,0 +1,40 @@
+
+  h1{
+    font-size: x-large;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .forum-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forum-list h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .forum-card {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .forum-card h2 {
+    margin: 0 0 10px;
+  }
+  
+  .forum-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  

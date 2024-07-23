@@ -1,0 +1,17 @@
+<div>
+  <h2>Select the bus you want to view!!</h2>
+  <script>
+    console.log(currentBusImage);
+  </script>
+  
+  <button (click)="selectBus('standard-bus')">Standard Bus</button>
+  <button (click)="selectBus('sleeper-bus')">Sleeper Bus</button>
+  <button (click)="selectBus('acSeater-bus')">AC-Seater Bus</button>
+  <button (click)="selectBus('acSleeper-bus')">AC-Sleeper Bus</button>
+
+  <a-scene *ngIf="currentBusImage">
+    <a-sky [attr.src]="currentBusImage"></a-sky>
+  </a-scene>
+ 
+</div>
+

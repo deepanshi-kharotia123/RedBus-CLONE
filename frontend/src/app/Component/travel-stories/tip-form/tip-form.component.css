@@ -1,0 +1,84 @@
+   body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #716868;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .heading {
+    color: #f5f1f1;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-image: url('/assets/neon.jpg');
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .neumorphic-form {
+    background: #141313;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #0d0d0d, -1px -1px 11px #171717;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .neumorphic-form h2 {
+    font-size: larger;
+    font-family: cursive;
+    color: #f0f0f0;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    background: #eee5e5;
+    border: none;
+    outline: none;
+    color: #060606;
+    border-radius: 8px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #9f5dbe;
+    border: none;
+    outline: none;
+    color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #0d0d0d, -5px -5px 10px #171717;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    box-shadow: none;
+    color: #0b0b0b;
+  }
+  .container input,
+  .container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: normal;
+  }
+  

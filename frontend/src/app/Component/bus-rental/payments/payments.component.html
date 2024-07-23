@@ -1,0 +1,40 @@
+<div class="payment-container">
+    <h2>Payment Details</h2>
+    <form [formGroup]="paymentForm" (ngSubmit)="onSubmit()">
+      <div class="offer-code">
+        <input type="text" placeholder="ENTER OFFER CODE" formControlName="offerCode" />
+      </div>
+      <div class="payment-info">
+        <div class="info-box">
+          <i class="fa fa-lock"></i> Safe and Secure Online Payments
+        </div>
+        <div class="info-box">
+          <i class="fa fa-exchange-alt"></i> 60+ million transactions
+        </div>
+        <div class="info-box">
+          <i class="fa fa-shield-alt"></i> 10+ years of Trust
+        </div>
+      </div>
+      <button type="submit" class="btn-stripe">Pay With Stripe</button>
+      <h3>Choose Other Payment Method</h3>
+      <div class="payment-methods">
+        <label>
+          <input type="radio" formControlName="paymentMethod" value="creditCard" />
+          <i class="fa fa-credit-card"></i> Credit Card
+        </label>
+        <label>
+          <input type="radio" formControlName="paymentMethod" value="debitCard" />
+          <i class="fa fa-credit-card"></i> Debit Card
+        </label>
+        <label>
+          <input type="radio" formControlName="paymentMethod" value="wallet" />
+          <i class="fa fa-wallet"></i> Wallets
+        </label>
+        <label>
+          <input type="radio" formControlName="paymentMethod" value="netBanking" />
+          <i class="fa fa-university"></i> Net Banking
+        </label>
+      </div>
+    </form>
+  </div>
+  

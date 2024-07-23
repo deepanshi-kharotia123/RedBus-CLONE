@@ -1,0 +1,18 @@
+<!-- 
+<div *ngFor="let story of stories" class="story">
+    <h2>{{ story.title }}</h2>
+    <p>{{ story.content }}</p>
+    <p>Author: {{ story.author }}</p>
+    <p>Date: {{ story.date | date }}</p>
+  </div> -->
+
+  <div class="story-list">
+    <h1>Stories</h1>
+    <div *ngIf="stories.length === 0">No uploaded stories yet.</div>
+    <div class="story-card" *ngFor="let story of stories">
+      <h2>{{ story.title }}</h2>
+      <p>{{ story.content }}</p>
+      <p><strong>Author:</strong> {{ story.author }}</p>
+    </div>
+  </div>
+  

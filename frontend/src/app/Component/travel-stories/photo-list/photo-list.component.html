@@ -1,0 +1,29 @@
+<!-- <div *ngFor="let photo of photos" class="photo">
+    <img [src]="photo.url" alt="Photo description" />
+    <p>{{ photo.description }}</p>
+    <p>Author: {{ photo.author }}</p>
+    <p>Date: {{ photo.date | date }}</p>
+  </div>
+   -->
+   <!-- <div class="photo-list">
+    <h1>Photos</h1>
+    <div *ngFor="let photo of photos" class="photo-card">
+      <img [src]="photo.url" alt="{{ photo.description }}">
+      <p>{{ photo.description }}</p>
+      <p><em>by {{ photo.author }}</em></p>
+    </div>
+  </div>
+   -->
+
+   <div class="photo-list">
+    <h1>Uploaded Photos</h1>
+    <div *ngIf="photos.length === 0">No photos uploaded yet.</div>
+    <div class="photo-card" *ngFor="let photo of photos">
+      <img [src]="photo.filePath" alt="Photo" class="photo-image">
+      <div class="photo-details">
+        <p><strong>Description:</strong> {{ photo.description }}</p>
+        <p><strong>Author:</strong> {{ photo.author }}</p>
+      </div>
+    </div>
+  </div>
+  

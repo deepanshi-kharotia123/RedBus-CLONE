@@ -1,0 +1,16 @@
+<!-- <div *ngFor="let forum of forums" class="forum">
+    <h2>{{ forum.topic }}</h2>
+    <a [routerLink]="['/forum', forum._id]">View Discussion</a>
+  </div>
+   -->
+
+   <div class="forum-list">
+    <h1>Forums</h1>
+    <div *ngIf="forums.length === 0">No forums yet.</div>
+    <div class="forum-card" *ngFor="let forum of forums">
+      <h2>{{ forum.title }}</h2>
+      <p>{{ forum.content }}</p>
+      <p><strong>Author:</strong> {{ forum.author }}</p>
+    </div>
+  </div>
+  

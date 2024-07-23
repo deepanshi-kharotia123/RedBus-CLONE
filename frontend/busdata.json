@@ -1,0 +1,122 @@
+[
+    {
+        "operatorName": "MetroBus",
+        "busType": "Standard",
+        "departureTime": "11",
+        "rating": [3.9, 3.8, 4.0],
+        "totalSeats": 40,
+        "routes": "6686dd233701b39ea2215f94",
+        "images": "https://example.com/bus-image5.jpg",
+        "liveTracking": 0,
+        "reschedulable": 1
+    },
+    {
+        "operatorName": "TravelXpress",
+        "busType": "Sleeper",
+        "departureTime": "08",
+        "rating": [4, 4.5, 3.5],
+        "totalSeats": 40,
+        "routes": "6686dd233701b39ea2215f94",
+        "liveTracking": 1,
+        "reschedulable": 0
+    },
+    {
+        "operatorName": "FastTransit",
+        "busType": "A/C Seater",
+        "departureTime": "10",
+        "rating": [4.5, 4.0, 4.2],
+        "totalSeats": 30,
+        "routes": "6686de3e3701b39ea22200d3",
+        "images": "https://example.com/bus-image2.jpg",
+        "liveTracking": 1,
+        "reschedulable": 1
+    },
+    {
+        "operatorName": "CityLink",
+        "busType": "Sleeper",
+        "departureTime": "12",
+        "rating": [4.2, 4.3, 4.1],
+        "totalSeats": 40,
+        "routes": "6686de3e3701b39ea22200d3",
+        "images": "https://example.com/bus-image3.jpg",
+        "liveTracking": 1,
+        "reschedulable": 0
+    },
+    {
+        "operatorName": "SwiftTrans",
+        "busType": "A/C Seater",
+        "departureTime": "09",
+        "rating": [4.8, 4.9, 4.7],
+        "totalSeats": 20,
+        "routes": "6686deb23701b39ea2224545",
+        "images": "https://example.com/bus-image4.jpg",
+        "liveTracking": 1,
+        "reschedulable": 1
+    },
+    {
+        "operatorName": "ExpressLine",
+        "busType": "AC Seater",
+        "departureTime": "02",
+        "rating": [4.4, 4.2, 4.5],
+        "totalSeats": 35,
+        "routes": "6686deb23701b39ea2224545",
+        "images": "https://example.com/bus-image6.jpg",
+        "liveTracking": 1,
+        "reschedulable": 0
+    },
+    {
+        "operatorName": "TransitHub",
+        "busType": "Standard",
+        "departureTime": "03",
+        "rating": [4.6, 4.7, 4.8],
+        "totalSeats": 25,
+        "routes": "6686df4c3701b39ea2229d6e",
+        "images": "https://example.com/bus-image7.jpg",
+        "liveTracking": 0,
+        "reschedulable": 1
+    },
+    {
+        "operatorName": "EliteTravels",
+        "busType": "Sleeper",
+        "departureTime": "06",
+        "rating": [4.3, 4.4, 4.2],
+        "totalSeats": 40,
+        "routes": "6686df4c3701b39ea2229d6e",
+        "images": "https://example.com/bus-image8.jpg",
+        "liveTracking": 1,
+        "reschedulable": 0
+    },
+    {
+        "operatorName": "TravelMax",
+        "busType": "AC Sleeper",
+        "departureTime": "08",
+        "rating": [4.5, 4.6, 4.7],
+        "totalSeats": 30,
+        "routes": "6686dfb93701b39ea222d91d",
+        "images": "https://example.com/bus-image9.jpg",
+        "liveTracking": 1,
+        "reschedulable": 1
+    },
+    {
+        "operatorName": "SunriseTransit",
+        "busType": "Standard",
+        "departureTime": "05",
+        "rating": [4.7, 4.8, 4.6],
+        "totalSeats": 20,
+        "routes": "6686dfb93701b39ea222d91d",
+        "images": "https://example.com/bus-image10.jpg",
+        "liveTracking": 0,
+        "reschedulable": 0
+    },
+    {
+        "operatorName": "RapidTransport",
+        "busType": "Sleeper",
+        "departureTime": "01",
+        "rating": [4.1, 4.0, 4.3],
+        "totalSeats": 40,
+        "routes": "6686dfb93701b39ea222d91d",
+        "images": "https://example.com/bus-image11.jpg",
+        "liveTracking": 1,
+        "reschedulable": 1
+    }
+]

@@ -1,0 +1,10 @@
+
+  <div class="tip-list">
+    <h1>Tips</h1>
+    <div *ngIf="tips.length === 0">No uploaded tips yet.</div>
+    <div class="tip-card" *ngFor="let tip of tips">
+      <h2>{{ tip.title }}</h2>
+      <p>{{ tip.content }}</p>
+      <p><strong>Author:</strong> {{ tip.author }}</p>
+    </div>
+  </div>

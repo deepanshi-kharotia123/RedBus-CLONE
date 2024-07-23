@@ -1,0 +1,88 @@
+<div class="SingleTrip">
+  <div class="SingleTrip__image">
+    <img [src]="randomimage" alt="bus" />
+  </div>
+  <div style="display: flex; justify-content: space-evenly">
+    <div class="SingleTrip__busdetails">
+      <div class="heading" style="font-weight: 600; font-size: large">
+        Bus Details
+      </div>
+
+      <div class="userDetailInfo">
+        <span class="material-icons">radio_button_checked</span> Dept Location:
+        {{ currentdeptcity }}
+      </div>
+
+      <div class="userDetailInfo">
+        <span class="material-icons">radio_button_checked</span> Dept Time:
+        {{ currentdepttime }}00 hrs
+      </div>
+
+      <div>
+        <span class="material-icons">radio_button_checked</span> Dept Date:
+        {{ currentdeptdate }}
+      </div>
+
+      <div>
+        <span class="material-icons">radio_button_checked</span> Arrival
+        Location:
+        {{ currentarrivalcity }}
+      </div>
+
+      <div>
+        <span class="material-icons">radio_button_checked</span> Arrival Time:
+        {{ currentarrivaltime }}00 hrs
+      </div>
+
+      <div>
+        <span class="material-icons">radio_button_checked</span> Arrival Date:
+        {{ currentarrivaldate }}
+      </div>
+
+      <div>
+        <span class="material-icons">radio_button_checked</span> Total Fare:
+        {{ currentfare }}
+      </div>
+
+    </div>
+
+    <div class="SingleTrip__persondetails">
+      <div class="heading" style="font-weight: 600; font-size: large">
+        Passenger Details
+      </div>
+
+      <div class="userDetailInfo">
+        <span class="material-icons">arrow_right_alt</span> Contact Email:
+        {{ currentemail }}
+      </div>
+
+      <div class="userDetailInfo">
+        <span class="material-icons">arrow_right_alt</span> Contact Phn No:
+        {{ currentphnNo }}
+      </div>
+
+      <!-- <div  *ngIf="currentbooking && currentbooking.passengerDetails?.length"> -->
+        <div class="SingleTrip__customerDetails__passenger" >
+          <!-- <div *ngIf="currentbooking">
+            <div *ngIf="currentbooking.passengerDetails?.length">
+              <div *ngFor="let passenger of currentbooking.passengerDetails"> -->
+          <!-- <div *ngFor="let passenger of currentbooking.passengerDetails"> -->
+            <p>
+              <span class="material-icons">arrow_right_alt</span> Name:
+              {{ currentname }}
+            </p>
+            <p>
+              <span class="material-icons">arrow_right_alt</span> Gender:
+              {{ currentgender }}
+            </p>
+            <p>
+              <span class="material-icons">arrow_right_alt</span> Age:
+              {{ currentage }}
+            </p>
+        <!-- </div> -->
+      </div>
+      <!-- </div> -->
+    </div>
+   </div>
+</div>
+

@@ -1,0 +1,31 @@
+  <!-- <div class="story-form">
+    <h1>Add a New Story</h1>
+    <form (ngSubmit)="createStory()">
+      <label for="title">Title</label>
+      <input type="text" id="title" [(ngModel)]="story.title" name="title" required>
+  
+      <label for="content">Content</label>
+      <textarea id="content" [(ngModel)]="story.content" name="content" required></textarea>
+  
+      <label for="author">Author</label>
+      <input type="text" id="author" [(ngModel)]="story.author" name="author" required>
+  
+      <button type="submit">Submit</button>
+    </form>
+  </div> -->
+  <div class="container">
+    <form class="neumorphic-form">
+        <h2>Add a New Story</h2>
+        <div class="input-container">
+          <form (ngSubmit)="createStory()">
+            <label class="heading" for="title">Title</label>
+            <input type="text" id="title" [(ngModel)]="story.title" name="title" required>
+        
+            <label class="heading" for="content">Content</label>
+            <textarea id="content" [(ngModel)]="story.content" name="content" required></textarea>
+        
+            <label class="heading"  for="author">Author</label>
+            <input type="text" id="author" [(ngModel)]="story.author" name="author" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>

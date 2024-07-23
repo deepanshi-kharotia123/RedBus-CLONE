@@ -1,0 +1,18 @@
+
+  <div class="container">
+    <form class="neumorphic-form">
+      <h2>Add a New Photo</h2>
+      <div class="input-container">
+        <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+          <label  class="heading" for="file">Photo</label>
+          <input type="file" id="file" (change)="onFileSelected($event)" name="file" required>
+      
+          <label  class="heading" for="description">Description</label>
+          <textarea id="description" [(ngModel)]="photo.description" name="description" required></textarea>
+      
+          <label  class="heading" for="author">Author</label>
+          <input type="text" id="author" [(ngModel)]="photo.author" name="author" required>
+      
+          <button type="submit">Submit</button>
+        </form>
+      </div>
